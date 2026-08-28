@@ -444,3 +444,14 @@ a {
         flex-direction: column;
     }
 }
+/* Estilo del Logo en Navegación */
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px; /* Ajusta la altura según prefieras */
+    width: auto;
+    object-fit: contain;
+}
