@@ -50,7 +50,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
 }
 
@@ -60,16 +60,17 @@ a {
     align-items: center;
 }
 
-/* CONTROL DEL TAMAÑO DEL LOGO */
+/* CONTROL Y TAMAÑO DEL LOGO EN NAVEGACIÓN */
 .logo-brand {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    padding: 4px 0;
 }
 
 .logo-img {
-    height: 45px !important;
+    height: 75px !important; /* Altura adecuada para ver el isotipo y las letras */
     width: auto !important;
-    max-width: 220px;
+    max-width: 280px;
     object-fit: contain;
     display: block;
 }
@@ -98,7 +99,7 @@ a {
 .hero {
     background: linear-gradient(rgba(15, 30, 54, 0.9), rgba(15, 30, 54, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     color: var(--white);
-    padding: 140px 0 100px 0;
+    padding: 130px 0 90px 0;
     text-align: center;
 }
 
@@ -114,7 +115,7 @@ a {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     max-width: 900px;
     margin: 0 auto 20px auto;
@@ -122,9 +123,9 @@ a {
 }
 
 .hero-description {
-    font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 650px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 700px;
     margin: 0 auto 35px auto;
 }
 
@@ -165,7 +166,7 @@ a {
    SECCIÓN SOBRE LA FIRMA
    ========================================== */
 .about-section {
-    padding: 100px 0;
+    padding: 90px 0;
     background-color: var(--white);
 }
 
@@ -188,20 +189,21 @@ a {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-stats {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     margin-top: 30px;
 }
 
 .stat-number {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--accent-gold);
     display: block;
@@ -216,7 +218,7 @@ a {
    SECCIÓN DE SERVICIOS
    ========================================== */
 .services-section {
-    padding: 100px 0;
+    padding: 90px 0;
     background-color: var(--bg-light);
 }
 
@@ -226,7 +228,7 @@ a {
 
 .section-header {
     max-width: 700px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 50px auto;
 }
 
 .section-description {
@@ -258,9 +260,10 @@ a {
 }
 
 .service-title {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
     font-weight: 600;
+    color: var(--primary-navy);
 }
 
 .service-text {
@@ -284,111 +287,10 @@ a {
 }
 
 /* ==========================================
-   SECCIÓN CASOS DE ÉXITO Y TESTIMONIOS
-   ========================================== */
-.cases-section {
-    padding: 100px 0;
-    background-color: var(--white);
-}
-
-.cases-highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-bottom: 70px;
-}
-
-.highlight-item {
-    background-color: var(--bg-light);
-    padding: 35px 30px;
-    border-top: 3px solid var(--accent-gold);
-    transition: var(--transition);
-}
-
-.highlight-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--box-shadow);
-}
-
-.highlight-value {
-    display: block;
-    font-family: var(--font-heading);
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--primary-navy);
-    margin-bottom: 8px;
-}
-
-.highlight-title {
-    display: block;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 10px;
-}
-
-.highlight-desc {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.testimonial-card {
-    background-color: var(--bg-light);
-    padding: 40px;
-    border-radius: 4px;
-    position: relative;
-    border: 1px solid rgba(15, 30, 54, 0.05);
-}
-
-.quote-mark {
-    font-family: var(--font-heading);
-    font-size: 4rem;
-    color: var(--accent-gold);
-    line-height: 1;
-    margin-bottom: -20px;
-    opacity: 0.6;
-}
-
-.testimonial-text {
-    font-style: italic;
-    color: var(--text-dark);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 25px;
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-author {
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.author-name {
-    font-weight: 600;
-    color: var(--primary-navy);
-    font-size: 0.95rem;
-}
-
-.author-role {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-}
-
-/* ==========================================
    SECCIÓN DE AGENDAMIENTO (CALENDLY)
    ========================================== */
 .booking-section {
-    padding: 100px 0;
+    padding: 90px 0;
     background-color: var(--primary-navy);
     color: var(--white);
 }
@@ -428,16 +330,10 @@ a {
    ========================================== */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .services-grid,
-    .cases-highlights,
-    .testimonials-grid {
+    .services-grid {
         grid-template-columns: 1fr;
     }
 
@@ -446,6 +342,11 @@ a {
     }
 
     .logo-img {
-        height: 35px !important;
+        height: 55px !important;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
     }
 }
