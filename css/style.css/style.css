@@ -50,7 +50,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 12px 0;
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
 }
 
@@ -60,17 +60,17 @@ a {
     align-items: center;
 }
 
-/* CONTROL Y TAMAÑO DEL LOGO EN NAVEGACIÓN */
+/* CONTROL Y TAMAÑO DEL NUEVO LOGO HORIZONTAL */
 .logo-brand {
     display: flex;
     align-items: center;
-    padding: 4px 0;
+    padding: 2px 0;
 }
 
 .logo-img {
-    height: 75px !important; /* Altura adecuada para ver el isotipo y las letras */
+    height: 42px !important; /* Altura óptima para el logo horizontal */
     width: auto !important;
-    max-width: 280px;
+    max-width: 320px;
     object-fit: contain;
     display: block;
 }
@@ -342,7 +342,7 @@ a {
     }
 
     .logo-img {
-        height: 55px !important;
+        height: 34px !important;
     }
 
     .about-stats {
