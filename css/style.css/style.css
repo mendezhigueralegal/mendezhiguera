@@ -1,22 +1,353 @@
+/* ==========================================
+   VARIABLES Y CONFIGURACIÓN GLOBAL
+   ========================================== */
+:root {
+    --primary-navy: #0f1e36;
+    --accent-gold: #c5a059;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --text-dark: #1a1a1a;
+    --text-muted: #555555;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --transition: all 0.3s ease;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================
+   ENCABEZADOS Y NAVEGACIÓN
+   ========================================== */
 .header {
     background-color: var(--primary-navy);
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 15px 0; /* Le damos un poco más de aire a la barra */
+    padding: 16px 0; /* Más espacio para dar cabida al logo */
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* AJUSTE FORZADO PARA COMPENSAR MARGENES DEL LOGO */
 .logo-brand {
     display: flex;
     align-items: center;
     padding: 0;
+    margin: -10px 0; /* Compensación para recortar el espacio vacío sobrante */
 }
 
 .logo-img {
-    height: 75px !important; /* Subimos de 42px a 75px para compensar los márgenes transparentes */
+    height: 80px !important; /* Aumentado a 80px para que las letras se vean grandes */
     width: auto !important;
-    max-width: 380px;
+    max-width: 400px;
     object-fit: contain;
     display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* ==========================================
+   SECCIÓN HERO (PORTADA)
+   ========================================== */
+.hero {
+    background: linear-gradient(rgba(15, 30, 54, 0.9), rgba(15, 30, 54, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    color: var(--white);
+    padding: 130px 0 90px 0;
+    text-align: center;
+}
+
+.hero-subtitle {
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: var(--accent-gold);
+    color: var(--primary-navy);
+    padding: 14px 32px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: #d8b268;
+}
+
+.btn-secondary {
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 14px 32px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-navy);
+}
+
+/* ==========================================
+   SECCIÓN SOBRE LA FIRMA
+   ========================================== */
+.about-section {
+    padding: 90px 0;
+    background-color: var(--white);
+}
+
+.section-subtitle {
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================
+   SECCIÓN DE SERVICIOS
+   ========================================== */
+.services-section {
+    padding: 90px 0;
+    background-color: var(--bg-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-header {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.section-description {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-top: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--white);
+    padding: 40px 30px;
+    border: 1px solid rgba(15, 30, 54, 0.06);
+    border-radius: 4px;
+    transition: var(--transition);
+    position: relative;
+    top: 0;
+}
+
+.service-card:hover {
+    top: -6px;
+    box-shadow: var(--box-shadow);
+    border-color: rgba(197, 160, 89, 0.4);
+}
+
+.service-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--primary-navy);
+}
+
+.service-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.service-card:hover .service-link {
+    color: var(--accent-gold);
+}
+
+/* ==========================================
+   SECCIÓN DE AGENDAMIENTO (CALENDLY)
+   ========================================== */
+.booking-section {
+    padding: 90px 0;
+    background-color: var(--primary-navy);
+    color: var(--white);
+}
+
+.booking-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gold-text {
+    color: var(--accent-gold) !important;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.text-light {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.calendly-embed-container {
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--primary-navy);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.calendly-inline-widget {
+    border: none;
+}
+
+/* ==========================================
+   ADAPTACIÓN PARA MÓVILES
+   ========================================== */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .logo-img {
+        height: 50px !important;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
