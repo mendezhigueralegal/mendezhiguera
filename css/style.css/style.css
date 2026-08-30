@@ -46,7 +46,7 @@ a {
    ENCABEZADOS Y NAVEGACIÓN CENTRADA
    ========================================== */
 .header {
-    background-color: rgba(15, 30, 54, 0.98);
+    background-color: rgba(15, 30, 54, 0.96);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -64,7 +64,7 @@ a {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 45px;
     align-items: center;
 }
 
@@ -85,7 +85,7 @@ a {
    ========================================== */
 .hero-section {
     position: relative;
-    padding: 80px 0 100px 0;
+    padding: 70px 0 90px 0;
     text-align: center;
     color: var(--white);
     overflow: hidden;
@@ -94,7 +94,7 @@ a {
     align-items: center;
 }
 
-/* CARRUSEL ANIMADO EN CSS (TRANSICIÓN SUAVE) */
+/* CARRUSEL ANIMADO DE IMÁGENES DE FONDO */
 .hero-carousel {
     position: absolute;
     top: 0;
@@ -116,19 +116,19 @@ a {
     animation: imageFade 21s infinite ease-in-out;
 }
 
-/* Imagen 1: Enfoque Médico / Sanitario */
+/* Slide 1: Enfoque Médico (Homologación de títulos) */
 .slide-1 {
     background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1920&q=80');
     animation-delay: 0s;
 }
 
-/* Imagen 2: Arquitectura / Edificios de Justicia - Extranjería */
+/* Slide 2: Extranjería y Arquitectura Corporativa */
 .slide-2 {
     background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
     animation-delay: 7s;
 }
 
-/* Imagen 3: Corporativo / Jurídico */
+/* Slide 3: Consultoría Jurídica y Tributaria */
 .slide-3 {
     background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80');
     animation-delay: 14s;
@@ -142,7 +142,7 @@ a {
     100% { opacity: 0; }
 }
 
-/* OVERLAY OSCURO ELEGANTE */
+/* OVERLAY OSCURO PARA LEGIBILIDAD */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -162,15 +162,17 @@ a {
 }
 
 .hero-logo-box {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-logo-img {
-    height: 110px; /* Tamaño destacado para el logo en el centro de la portada */
+    height: 180px; /* Tamaño ideal para el nuevo logo vertical en la portada */
     width: auto;
-    max-width: 90%;
+    max-width: 320px;
     object-fit: contain;
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.4));
 }
 
 .hero-subtitle {
@@ -409,7 +411,7 @@ a {
     }
 
     .hero-logo-img {
-        height: 85px;
+        height: 130px;
     }
 
     .hero-buttons {
