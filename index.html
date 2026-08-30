@@ -3,138 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Méndez Higuera Legal Group | Servicios Legales España & Colombia</title>
-    <!-- Fuentes Google -->
+    <title>Méndez Higuera Legal Group | Servicios Jurídicos España y Colombia</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navegación -->
+    <!-- NAVEGACIÓN SUPERIOR CENTRADA -->
     <header class="header">
-        <div class="container nav-container">
-            <a href="#" class="logo-brand">
-                <img src="logo.png" alt="Méndez Higuera Legal Group" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#firma">La Firma</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#cita">Agendar Cita</a></li>
-            </ul>
+        <div class="container">
+            <nav class="nav-container-centered">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#la-firma">La Firma</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#agendar">Agendar Cita</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Sección Hero (Portada) -->
-    <section id="inicio" class="hero">
-        <div class="container">
+    <!-- SECCIÓN HERO CON CARRUSEL DE FONDO Y LOGO CENTRADO -->
+    <section id="inicio" class="hero-section">
+        
+        <!-- CARRUSEL SUAVE DE FONDOS -->
+        <div class="hero-carousel">
+            <!-- Imagen 1: Enfoque Médico / Homologaciones -->
+            <div class="carousel-slide slide-1"></div>
+            <!-- Imagen 2: Extranjería / Conexión España - Colombia (Arquitectura/Leyes) -->
+            <div class="carousel-slide slide-2"></div>
+            <!-- Imagen 3: Corporativo y Tributario -->
+            <div class="carousel-slide slide-3"></div>
+        </div>
+
+        <!-- CAPA OSCURA PARA ASEGURAR LECTURA DE TEXTOS Y LOGO -->
+        <div class="hero-overlay"></div>
+
+        <!-- CONTENIDO PRINCIPAL CENTRADO -->
+        <div class="container hero-content">
+            
+            <!-- CONTENEDOR DEL LOGO PRINCIPAL -->
+            <div class="hero-logo-box">
+                <!-- Asegúrate de subir tu logo sin fondo transparente aquí -->
+                <img src="logo.png" alt="Méndez Higuera Legal Group" class="hero-logo-img">
+            </div>
+
             <span class="hero-subtitle">Rigor & Compromiso</span>
-            <h1 class="hero-title">Soluciones legales y trámites estratégicos entre España y Colombia.</h1>
-            <p class="hero-description">Especialistas en Extranjería, Homologación de Títulos Médicos y Académicos en España, así como Servicios Jurídicos y Tributarios clave en Colombia.</p>
+
+            <h1 class="hero-title">
+                Soluciones legales y trámites estratégicos entre España y Colombia.
+            </h1>
+
+            <p class="hero-description">
+                Especialistas en Extranjería, Homologación de Títulos Médicos y Académicos en España, así como Servicios Jurídicos y Tributarios clave en Colombia.
+            </p>
+
             <div class="hero-buttons">
-                <a href="#cita" class="btn-primary">Reservar Consulta</a>
+                <a href="#agendar" class="btn-primary">Reservar Consulta</a>
                 <a href="#servicios" class="btn-secondary">Ver Especialidades</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección La Firma -->
-    <section id="firma" class="about-section">
-        <div class="container about-grid">
-            <div>
-                <span class="section-subtitle">SOBRE LA FIRMA</span>
-                <h2 class="section-title">Acompañamiento claro, ágil y transparente</h2>
-                <p>En <strong>Méndez Higuera Legal Group</strong> nos enfocamos en ofrecer soluciones directas a trámites complejos. Entendemos el impacto de un proceso migratorio o de la homologación de un título profesional, por lo que trabajamos con el máximo rigor técnico y un compromiso cercano con cada cliente.</p>
-                <div class="about-stats">
-                    <div>
-                        <span class="stat-number">España</span>
-                        <span class="stat-label">Extranjería & Homologaciones</span>
-                    </div>
-                    <div>
-                        <span class="stat-number">Colombia</span>
-                        <span class="stat-label">Trámites Legales & DIAN</span>
+    <!-- SECCIÓN SOBRE LA FIRMA -->
+    <section id="la-firma" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <span class="section-subtitle">Sobre Nosotros</span>
+                    <h2 class="section-title">Asesoría Jurídica Trasatlántica de Confianza</h2>
+                    <p>En <strong>Méndez Higuera Legal Group</strong> nos especializamos en tender puentes legales eficaces entre España y Colombia. Nuestra firma combina el rigor técnico, la ética profesional y la visión estratégica requerida para resolver trámites complejos de extranjería, homologación profesional médica y derecho tributario con total solvencia.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Compromiso Legal</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">ES / CO</span>
+                            <span class="stat-label">Cobertura Bilateral</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Servicios Legales -->
+    <!-- SECCIÓN DE SERVICIOS -->
     <section id="servicios" class="services-section">
         <div class="container">
             <div class="section-header text-center">
-                <span class="section-subtitle">NUESTRAS ÁREAS DE PRÁCTICA</span>
-                <h2 class="section-title">Servicios especializados para tus necesidades</h2>
-                <p class="section-description">
-                    Ofrecemos asesoría enfocada y especializada en trámites específicos en España y Colombia.
-                </p>
+                <span class="section-subtitle">Nuestra Experiencia</span>
+                <h2 class="section-title">Áreas de Práctica</h2>
+                <p class="section-description">Soluciones adaptadas a profesionales, médicos y ciudadanos entre España y Colombia.</p>
             </div>
 
             <div class="services-grid">
-                <!-- Servicios en España -->
                 <div class="service-card">
-                    <h3 class="service-title">Homologación de Títulos en España</h3>
-                    <p class="service-text">Gestión especializada en la homologación de títulos profesionales (con especial enfoque en Médicos de Colombia) y estudios de Bachillerato ante los ministerios correspondientes.</p>
-                    <a href="#cita" class="service-link">Consultar trámite &rarr;</a>
+                    <h3 class="service-title">Homologación Médica y Académica</h3>
+                    <p class="service-text">Gestión integral para la homologación de títulos de medicina, especialidades médicas y titulaciones universitarias ante los ministerios en España.</p>
+                    <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
                 </div>
 
                 <div class="service-card">
-                    <h3 class="service-title">Trámites de Extranjería</h3>
-                    <p class="service-text">Asesoría y tramitación de Nacionalidad Española, Permisos de Residencia por Familiar de Ciudadano Español / UE y Visados o Estancia por Estudios.</p>
-                    <a href="#cita" class="service-link">Consultar trámite &rarr;</a>
+                    <h3 class="service-title">Derecho de Extranjería (España)</h3>
+                    <p class="service-text">Residencias, visados de trabajo, estancia por estudios, arraigos, ley de emprendedores y tramitación de la nacionalidad española.</p>
+                    <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
                 </div>
 
                 <div class="service-card">
-                    <h3 class="service-title">Compliance Normativo (España)</h3>
-                    <p class="service-text">Asesoría e implementación de programas de cumplimiento normativo y gestión de riesgos legales adaptados a pequeñas y medianas empresas en España.</p>
-                    <a href="#cita" class="service-link">Consultar área &rarr;</a>
-                </div>
-
-                <!-- Servicios en Colombia -->
-                <div class="service-card">
-                    <h3 class="service-title">Divorcio Express (Colombia)</h3>
-                    <p class="service-text">Tramitación rápida y formal de divorcios de mutuo acuerdo por vía notarial en Colombia, garantizando agilidad y respaldo legal.</p>
-                    <a href="#cita" class="service-link">Consultar trámite &rarr;</a>
-                </div>
-
-                <div class="service-card">
-                    <h3 class="service-title">Declaración de Renta (Colombia)</h3>
-                    <p class="service-text">Elaboración y presentación de declaración de renta para personas naturales y empresas, optimizando tu situación tributaria ante la DIAN.</p>
-                    <a href="#cita" class="service-link">Consultar área &rarr;</a>
-                </div>
-
-                <div class="service-card">
-                    <h3 class="service-title">Facturación Electrónica DIAN</h3>
-                    <p class="service-text">Implementación y asesoría en sistemas de facturación electrónica en Colombia para el cumplimiento de normativas fiscales vigentes.</p>
-                    <a href="#cita" class="service-link">Consultar área &rarr;</a>
+                    <h3 class="service-title">Servicios Jurídicos y Tributarios (Colombia)</h3>
+                    <p class="service-text">Asesoría jurídica patrimonial, gestión tributaria para colombianos en el exterior y trámites legales corporativos directos en Colombia.</p>
+                    <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Agendar Cita (Calendly) -->
-    <section id="cita" class="booking-section">
+    <!-- SECCIÓN DE AGENDAMIENTO DE CITA -->
+    <section id="agendar" class="booking-section text-center">
         <div class="container">
             <div class="booking-wrapper">
-                <div class="booking-header text-center">
-                    <span class="section-subtitle gold-text">CONSULTA PRESENCIAL O VIRTUAL</span>
-                    <h2 class="section-title text-white">Agende una Sesión de Asesoría</h2>
-                    <p class="section-description text-light">
-                        Seleccione el horario que mejor se adapte a su agenda para revisar su caso detalladamente.
-                    </p>
-                </div>
+                <span class="section-subtitle gold-text">Atención Personalizada</span>
+                <h2 class="section-title text-white">Agende su Consulta Legal</h2>
+                <p class="section-description text-light">Seleccione la fecha y hora que mejor se adapte a su disponibilidad para analizar su expediente con uno de nuestros especialistas.</p>
 
+                <!-- CONTENEDOR CALENDLY -->
                 <div class="calendly-embed-container">
-                    <div class="calendly-inline-widget" data-url="https://calendly.com?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=0f1e36&text_color=ffffff&primary_color=c5a059" style="min-width:320px;height:700px;"></div>
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/mendezhiguera-legal/30min?hide_gdpr_banner=1&background_color=0f1e36&text_color=ffffff&primary_color=c5a059" style="min-width:320px;height:700px;"></div>
                     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="js/script.js/script.js"></script>
 </body>
 </html>
