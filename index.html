@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- ESTILOS INTEGRADOS (Cero dependencias de carpetas externas) -->
+    <!-- ESTILOS INTEGRADOS -->
     <style>
         :root {
             --primary-navy: #0f1e36;
@@ -216,6 +216,7 @@
             font-weight: 600;
             border-radius: 3px;
             transition: var(--transition);
+            display: inline-block;
         }
 
         .btn-primary:hover {
@@ -230,6 +231,7 @@
             font-weight: 600;
             border-radius: 3px;
             transition: var(--transition);
+            display: inline-block;
         }
 
         .btn-secondary:hover {
@@ -322,6 +324,9 @@
             transition: var(--transition);
             position: relative;
             top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .service-card:hover {
@@ -355,6 +360,23 @@
 
         .service-card:hover .service-link {
             color: var(--accent-gold);
+        }
+
+        .btn-card-action {
+            background-color: var(--primary-navy);
+            color: var(--accent-gold);
+            padding: 12px 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 3px;
+            text-align: center;
+            transition: var(--transition);
+            margin-top: 15px;
+        }
+
+        .btn-card-action:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
         }
 
         /* AGENDAMIENTO */
@@ -496,21 +518,30 @@
             </div>
 
             <div class="services-grid">
+                <!-- Tarjeta 1: Homologación Médica (Conectada al Formulario Tally) -->
                 <div class="service-card">
-                    <h3 class="service-title">Homologación Médica y Académica</h3>
-                    <p class="service-text">Gestión integral para la homologación de títulos de medicina, especialidades médicas y titulaciones universitarias ante los ministerios en España.</p>
+                    <div>
+                        <h3 class="service-title">Homologación Médica y Académica</h3>
+                        <p class="service-text">Gestión integral para la homologación de títulos de medicina, especialidades médicas y titulaciones universitarias ante los ministerios en España.</p>
+                    </div>
+                    <a href="homologacion.html" class="btn-card-action">Evaluar Viabilidad Gratis &rarr;</a>
+                </div>
+
+                <!-- Tarjeta 2: Extranjería -->
+                <div class="service-card">
+                    <div>
+                        <h3 class="service-title">Derecho de Extranjería (España)</h3>
+                        <p class="service-text">Residencias, visados de trabajo, estancia por estudios, arraigos, ley de emprendedores y tramitación de la nacionalidad española.</p>
+                    </div>
                     <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
                 </div>
 
+                <!-- Tarjeta 3: Servicios Colombia -->
                 <div class="service-card">
-                    <h3 class="service-title">Derecho de Extranjería (España)</h3>
-                    <p class="service-text">Residencias, visados de trabajo, estancia por estudios, arraigos, ley de emprendedores y tramitación de la nacionalidad española.</p>
-                    <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
-                </div>
-
-                <div class="service-card">
-                    <h3 class="service-title">Servicios Jurídicos y Tributarios (Colombia)</h3>
-                    <p class="service-text">Asesoría jurídica patrimonial, gestión tributaria para colombianos en el exterior y trámites legales corporativos directos en Colombia.</p>
+                    <div>
+                        <h3 class="service-title">Servicios Jurídicos y Tributarios (Colombia)</h3>
+                        <p class="service-text">Asesoría jurídica patrimonial, gestión tributaria para colombianos en el exterior y trámites legales corporativos directos en Colombia.</p>
+                    </div>
                     <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
                 </div>
             </div>
