@@ -50,7 +50,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 16px 0; /* Más espacio para dar cabida al logo */
+    padding: 14px 0;
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
 }
 
@@ -60,18 +60,17 @@ a {
     align-items: center;
 }
 
-/* AJUSTE FORZADO PARA COMPENSAR MARGENES DEL LOGO */
+/* TAMAÑO DEL LOGO OPTIMIZADO PARA IMAGEN RECORTADA AL RAS */
 .logo-brand {
     display: flex;
     align-items: center;
     padding: 0;
-    margin: -10px 0; /* Compensación para recortar el espacio vacío sobrante */
 }
 
 .logo-img {
-    height: 80px !important; /* Aumentado a 80px para que las letras se vean grandes */
+    height: 52px !important; /* Altura perfecta para logo horizontal sin lienzo vacío */
     width: auto !important;
-    max-width: 400px;
+    max-width: 350px;
     object-fit: contain;
     display: block;
 }
@@ -343,7 +342,7 @@ a {
     }
 
     .logo-img {
-        height: 50px !important;
+        height: 38px !important;
     }
 
     .about-stats {
