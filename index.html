@@ -70,17 +70,19 @@
             backdrop-filter: blur(8px);
         }
 
-        .nav-wrapper {
+        .nav-wrapper-centered {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
+            gap: 10px;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 40px;
             align-items: center;
+            justify-content: center;
         }
 
         .nav-links a {
@@ -97,12 +99,13 @@
 
         .header-socials {
             display: flex;
-            gap: 15px;
+            gap: 18px;
+            align-items: center;
         }
 
         .header-socials a {
             color: var(--accent-gold);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             transition: var(--transition);
         }
 
@@ -401,54 +404,6 @@
             color: var(--primary-navy);
         }
 
-        /* SECCIÓN RESEÑAS Y TESTIMONIOS */
-        .testimonials-section {
-            padding: 90px 0;
-            background-color: var(--white);
-        }
-
-        .testimonial-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .video-box {
-            position: relative;
-            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-            border: 1px solid rgba(197, 160, 89, 0.3);
-            margin-top: 30px;
-            background-color: #000;
-        }
-
-        .video-box iframe, 
-        .video-box video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .testimonial-quote {
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--text-muted);
-            margin-top: 25px;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--primary-navy);
-            margin-top: 8px;
-            display: block;
-        }
-
         /* AGENDAMIENTO */
         .booking-section {
             padding: 90px 0;
@@ -603,7 +558,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             z-index: 9999;
             color: var(--white);
-            display: none; /* Controlado por JS */
+            display: none;
             animation: fadeInUp 0.5s ease;
         }
 
@@ -662,14 +617,9 @@
         }
 
         @media (max-width: 768px) {
-            .nav-wrapper {
-                flex-direction: column;
-                gap: 15px;
-            }
             .nav-links {
-                gap: 15px;
+                gap: 20px;
                 flex-wrap: wrap;
-                justify-content: center;
             }
             .hero-title {
                 font-size: 1.9rem;
@@ -694,16 +644,15 @@
 </head>
 <body>
 
-    <!-- NAVEGACIÓN SUPERIOR CON REDES SOCIALES -->
+    <!-- NAVEGACIÓN SUPERIOR CENTRADA CON REDES SOCIALES -->
     <header class="header">
         <div class="container">
-            <div class="nav-wrapper">
+            <div class="nav-wrapper-centered">
                 <nav>
                     <ul class="nav-links">
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#la-firma">La Firma</a></li>
                         <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#resenas">Reseñas</a></li>
                         <li><a href="#agendar">Agendar Cita</a></li>
                     </ul>
                 </nav>
@@ -812,24 +761,6 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE RESEÑAS Y TESTIMONIOS -->
-    <section id="resenas" class="testimonials-section text-center">
-        <div class="container">
-            <div class="testimonial-container">
-                <span class="section-subtitle">Casos de Éxito</span>
-                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
-                <p class="section-description">La tranquilidad de nuestros representados es nuestro mejor aval.</p>
-
-                <div class="video-box">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Testimonio de Cliente" allowfullscreen></iframe>
-                </div>
-
-                <p class="testimonial-quote">"Su acompañamiento constante e información clara marcaron la diferencia durante todo el trámite de mi expediente."</p>
-                <span class="testimonial-author">Dr. Cliente Satisfecho — Homologación de Título en España</span>
-            </div>
-        </div>
-    </section>
-
     <!-- SECCIÓN DE AGENDAMIENTO DE CITA -->
     <section id="agendar" class="booking-section text-center">
         <div class="container">
@@ -887,7 +818,7 @@
                 </div>
             </div>
 
-            <!-- Copyight -->
+            <!-- Copyright -->
             <div class="footer-bottom">
                 <p>&copy; 2026 Méndez Higuera Legal Group. Todos los derechos reservados.</p>
             </div>
