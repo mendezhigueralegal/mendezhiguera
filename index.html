@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Méndez Higuera Legal Group | Servicios Jurídicos España y Colombia</title>
+    <title>Méndez Higuera Legal Group | Firma Legal Transatlántica España - Colombia</title>
     
+    <!-- META ETIQUETAS SEO -->
+    <meta name="description" content="Méndez Higuera Legal Group | Firma de abogados transatlántica especializada en extranjería, nacionalidad, homologación de títulos e inversiones entre España y Colombia. Solicita tu consulta legal.">
+    <meta name="keywords" content="abogados extranjeria españa colombia, homologacion titulos españa, visados españa colombia, arraigo social laboral, nacionalidad española, inversion transatlantica, mendez higuera abogados">
+    <meta name="author" content="Méndez Higuera Legal Group">
+    <meta name="robots" content="index, follow">
+
+    <!-- OPEN GRAPH / VISTA PREVIA PARA REDES SOCIALES Y WHATSAPP -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mendezhigueraabogados.com/">
+    <meta property="og:title" content="Méndez Higuera Legal Group | Firma Legal Transatlántica España - Colombia">
+    <meta property="og:description" content="Seguridad jurídica y eficiencia en trámites internacionales, extranjería, visados y homologación de títulos entre España y Colombia.">
+    <meta property="og:image" content="https://mendezhigueraabogados.com/logo.png">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- CARD PARA TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Méndez Higuera Legal Group | Abogados España - Colombia">
+    <meta name="twitter:description" content="Asesoría jurídica especializada en derecho transatlántico, extranjería y homologación de títulos.">
+    <meta name="twitter:image" content="https://mendezhigueraabogados.com/logo.png">
+
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="logo.png">
 
@@ -13,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome para Iconos de Redes y Contacto -->
+    <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- ESTILOS INTEGRADOS -->
@@ -45,7 +65,7 @@
             font-family: var(--font-body);
             color: var(--text-dark);
             line-height: 1.6;
-            background-color: var(--white);
+            background-color: var(--bg-light);
         }
 
         .container {
@@ -114,331 +134,137 @@
             transform: translateY(-2px);
         }
 
-        /* SECCIÓN HERO Y CARRUSEL */
-        .hero-section {
-            position: relative;
-            padding: 70px 0 90px 0;
-            text-align: center;
+        /* HERO SECTION */
+        .hero {
+            background-color: var(--primary-navy);
             color: var(--white);
-            overflow: hidden;
-            min-height: 85vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-carousel {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-
-        .carousel-slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            animation: imageFade 21s infinite ease-in-out;
-        }
-
-        .slide-1 {
-            background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1920&q=80');
-            animation-delay: 0s;
-        }
-
-        .slide-2 {
-            background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
-            animation-delay: 7s;
-        }
-
-        .slide-3 {
-            background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80');
-            animation-delay: 14s;
-        }
-
-        @keyframes imageFade {
-            0% { opacity: 0; transform: scale(1); }
-            8% { opacity: 1; }
-            33% { opacity: 1; }
-            41% { opacity: 0; transform: scale(1.04); }
-            100% { opacity: 0; }
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(15, 30, 54, 0.92) 0%, rgba(15, 30, 54, 0.82) 50%, rgba(15, 30, 54, 0.95) 100%);
-            z-index: 2;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 3;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero-logo-box {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero-logo-img {
-            height: 160px !important;
-            width: auto !important;
-            max-width: 320px !important;
-            object-fit: contain !important;
-            filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.4));
-            display: block !important;
-        }
-
-        .hero-subtitle {
-            color: var(--accent-gold);
-            font-size: 0.85rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 18px;
-            display: block;
-        }
-
-        .hero-title {
-            font-family: var(--font-heading);
-            font-size: 2.7rem;
-            font-weight: 700;
-            line-height: 1.25;
-            margin-bottom: 22px;
-        }
-
-        .hero-description {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.88);
-            max-width: 750px;
-            margin: 0 auto 38px auto;
-            font-weight: 300;
-        }
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-gold);
-            color: var(--primary-navy);
-            padding: 15px 34px;
-            font-weight: 600;
-            border-radius: 3px;
-            transition: var(--transition);
-            display: inline-block;
-        }
-
-        .btn-primary:hover {
-            background-color: #d8b268;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            border: 1px solid var(--white);
-            color: var(--white);
-            padding: 15px 34px;
-            font-weight: 600;
-            border-radius: 3px;
-            transition: var(--transition);
-            display: inline-block;
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--white);
-            color: var(--primary-navy);
-            transform: translateY(-2px);
-        }
-
-        /* SOBRE LA FIRMA */
-        .about-section {
-            padding: 90px 0;
-            background-color: var(--white);
-        }
-
-        .section-subtitle {
-            color: var(--accent-gold);
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            font-weight: 700;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .section-title {
-            font-family: var(--font-heading);
-            font-size: 2.2rem;
-            color: var(--primary-navy);
-            margin-bottom: 20px;
-        }
-
-        .about-grid {
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 100px 0 80px 0;
             text-align: center;
-        }
-
-        .about-stats {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin-top: 35px;
-        }
-
-        .stat-number {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* SERVICIOS */
-        .services-section {
-            padding: 90px 0;
-            background-color: var(--bg-light);
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .section-header {
-            max-width: 700px;
-            margin: 0 auto 50px auto;
-        }
-
-        .section-description {
-            color: var(--text-muted);
-            font-size: 1.05rem;
-            margin-top: 15px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background-color: var(--white);
-            padding: 40px 30px;
-            border: 1px solid rgba(15, 30, 54, 0.06);
-            border-radius: 4px;
-            transition: var(--transition);
             position: relative;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
-        .service-card:hover {
-            top: -6px;
-            box-shadow: var(--box-shadow);
-            border-color: rgba(197, 160, 89, 0.4);
-        }
-
-        .service-title {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-            color: var(--primary-navy);
-        }
-
-        .service-text {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            line-height: 1.7;
+        .hero-logo {
+            max-width: 180px;
             margin-bottom: 25px;
         }
 
-        .service-link {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--primary-navy);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: var(--transition);
-        }
-
-        .service-card:hover .service-link {
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
             color: var(--accent-gold);
+            margin-bottom: 15px;
         }
 
-        .btn-card-action {
-            background-color: var(--primary-navy);
-            color: var(--accent-gold);
-            padding: 12px 20px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border-radius: 3px;
-            text-align: center;
-            transition: var(--transition);
-            margin-top: 15px;
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto 35px auto;
+            color: rgba(255, 255, 255, 0.85);
         }
 
-        .btn-card-action:hover {
+        .btn-gold {
+            display: inline-block;
             background-color: var(--accent-gold);
             color: var(--primary-navy);
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 4px;
+            transition: var(--transition);
         }
 
-        /* AGENDAMIENTO */
-        .booking-section {
-            padding: 90px 0;
-            background-color: var(--primary-navy);
-            color: var(--white);
+        .btn-gold:hover {
+            background-color: #d8b46a;
+            transform: translateY(-2px);
         }
 
-        .booking-wrapper {
-            max-width: 900px;
+        /* SECCIÓN LA FIRMA */
+        .firma-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: var(--primary-navy);
+            margin-bottom: 40px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-gold);
+            margin: 10px auto 0 auto;
+        }
+
+        .firma-content {
+            max-width: 850px;
             margin: 0 auto;
+            text-align: center;
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* SECCIÓN SERVICIOS */
+        .servicios-section {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .servicio-card {
+            background-color: var(--white);
+            padding: 35px 25px;
+            border-radius: 6px;
+            box-shadow: var(--box-shadow);
+            border-top: 4px solid var(--accent-gold);
+            transition: var(--transition);
+        }
+
+        .servicio-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .servicio-card i {
+            font-size: 2.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .servicio-card h3 {
+            font-family: var(--font-heading);
+            color: var(--primary-navy);
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .servicio-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* SECCIÓN AGENDAR CITA (CALENDLY) */
+        .agendar-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .calendly-wrapper {
+            min-width: 320px;
+            height: 700px;
         }
 
         .gold-text {
             color: var(--accent-gold) !important;
-        }
-
-        .text-white {
-            color: var(--white) !important;
-        }
-
-        .text-light {
-            color: rgba(255, 255, 255, 0.7) !important;
-        }
-
-        .calendly-embed-container {
-            margin-top: 40px;
-            border-radius: 6px;
-            overflow: hidden;
-            background-color: var(--primary-navy);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(197, 160, 89, 0.2);
-        }
-
-        .calendly-inline-widget {
-            border: none;
         }
 
         /* PIE DE PÁGINA / FOOTER */
@@ -461,7 +287,6 @@
             color: var(--accent-gold);
             font-size: 1.2rem;
             margin-bottom: 20px;
-            position: relative;
         }
 
         .footer-col p {
@@ -544,7 +369,7 @@
             color: rgba(255, 255, 255, 0.5);
         }
 
-        /* BOTÓN FLOTANTE ESTÉTICO DE WHATSAPP */
+        /* BOTÓN FLOTANTE DE WHATSAPP */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -571,114 +396,20 @@
             box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
         }
 
-        /* BANNER DE COOKIES */
-        .cookie-banner {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            max-width: 500px;
-            background-color: var(--primary-navy);
-            border: 1px solid var(--accent-gold);
-            border-radius: 6px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            z-index: 9999;
-            color: var(--white);
-            display: none;
-            animation: fadeInUp 0.5s ease;
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .cookie-text {
-            font-size: 0.88rem;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .cookie-text a {
-            color: var(--accent-gold);
-            text-decoration: underline;
-        }
-
-        .cookie-buttons {
-            display: flex;
-            gap: 10px;
-            justify-content: flex-end;
-        }
-
-        .btn-cookie-accept {
-            background-color: var(--accent-gold);
-            color: var(--primary-navy);
-            border: none;
-            padding: 8px 18px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-cookie-accept:hover {
-            background-color: #d8b268;
-        }
-
-        .btn-cookie-reject {
-            background-color: transparent;
-            color: var(--white);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 8px 18px;
-            font-size: 0.85rem;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-cookie-reject:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
         @media (max-width: 768px) {
             .nav-links {
                 gap: 20px;
                 flex-wrap: wrap;
             }
-            .hero-title {
-                font-size: 1.9rem;
-            }
-            .hero-logo-img {
-                height: 120px !important;
-            }
-            .hero-buttons {
-                flex-direction: column;
-            }
-            .about-stats {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .whatsapp-float {
-                bottom: 20px;
-                right: 20px;
-                width: 46px;
-                height: 46px;
-                font-size: 22px;
-            }
-            .cookie-banner {
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
+            .hero h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVEGACIÓN SUPERIOR CENTRADA CON REDES SOCIALES -->
+    <!-- NAVEGACIÓN SUPERIOR CENTRADA -->
     <header class="header">
         <div class="container">
             <div class="nav-wrapper-centered">
@@ -699,114 +430,64 @@
         </div>
     </header>
 
-    <!-- SECCIÓN HERO CON CARRUSEL DE FONDO Y LOGO CENTRADO -->
-    <section id="inicio" class="hero-section">
-        <div class="hero-carousel">
-            <div class="carousel-slide slide-1"></div>
-            <div class="carousel-slide slide-2"></div>
-            <div class="carousel-slide slide-3"></div>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <img src="logo.png" alt="Méndez Higuera Legal Group" class="hero-logo">
+            <h1>Méndez Higuera Legal Group</h1>
+            <p>Firma legal transatlántica especializada en brindar seguridad jurídica, eficiencia y respaldo profesional en sus trámites entre España y Colombia.</p>
+            <a href="#agendar" class="btn-gold">Agendar Consulta Legal</a>
         </div>
+    </section>
 
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-            <div class="hero-logo-box">
-                <img src="logo.png" alt="Méndez Higuera Legal Group" class="hero-logo-img">
-            </div>
-
-            <span class="hero-subtitle">Rigor & Compromiso</span>
-
-            <h1 class="hero-title">
-                Soluciones legales y trámites estratégicos entre España y Colombia.
-            </h1>
-
-            <p class="hero-description">
-                Especialistas en Extranjería, Homologación de Títulos Médicos y Académicos en España, así como Servicios Jurídicos y Tributarios clave en Colombia.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#agendar" class="btn-primary">Reservar Consulta</a>
-                <a href="#servicios" class="btn-secondary">Ver Especialidades</a>
+    <!-- LA FIRMA -->
+    <section id="la-firma" class="firma-section">
+        <div class="container">
+            <h2 class="section-title">La Firma</h2>
+            <div class="firma-content">
+                <p>En <strong>Méndez Higuera Legal Group</strong> entendemos que los retos jurídicos transatlánticos exigen precisión, cercanía y una estrategia legal sólida. Nos especializamos en conectar las normativas de España y Colombia para brindar asesoría integral a particulares y empresas, garantizando soluciones ágiles en extranjería, nacionalidad, homologación de títulos e inversiones internacionales.</p>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE LA FIRMA -->
-    <section id="la-firma" class="about-section">
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios-section">
         <div class="container">
-            <div class="about-grid">
-                <div>
-                    <span class="section-subtitle">Sobre Nosotros</span>
-                    <h2 class="section-title">Asesoría Jurídica Trasatlántica de Confianza</h2>
-                    <p>En <strong>Méndez Higuera Legal Group</strong> nos especializamos en tender puentes legales eficaces entre España y Colombia. Nuestra firma combina el rigor técnico, la ética profesional y la visión estratégica requerida para resolver trámites complejos de extranjería, homologación profesional médica y derecho tributario con total solvencia.</p>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Compromiso Legal</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">ES / CO</span>
-                            <span class="stat-label">Cobertura Bilateral</span>
-                        </div>
-                    </div>
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <i class="fa-solid fa-passport"></i>
+                    <h3>Extranjería y Visados</h3>
+                    <p>Tramitación de visados, residencia por arraigo, visados de inversor, nomadismo digital y renovación de autorizaciones en España.</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fa-solid fa-flag"></i>
+                    <h3>Nacionalidad Española</h3>
+                    <p>Asesoría y gestión integral del expediente de nacionalidad por residencia o ley de memoria democrática.</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Homologación de Títulos</h3>
+                    <p>Convalidación y homologación de títulos universitarios y técnicos obtenidos en Colombia para su validez legal en España.</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>Inversiones Transatlánticas</h3>
+                    <p>Acompañamiento jurídico para la apertura de negocios, constitución de sociedades e inversión inmobiliaria transfronteriza.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN DE SERVICIOS -->
-    <section id="servicios" class="services-section">
+    <!-- AGENDAR CITA -->
+    <section id="agendar" class="agendar-section">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">Nuestra Experiencia</span>
-                <h2 class="section-title">Áreas de Práctica</h2>
-                <p class="section-description">Soluciones adaptadas a profesionales, médicos y ciudadanos entre España y Colombia.</p>
-            </div>
-
-            <div class="services-grid">
-                <!-- Tarjeta 1: Homologación Médica -->
-                <div class="service-card">
-                    <div>
-                        <h3 class="service-title">Homologación Médica y Académica</h3>
-                        <p class="service-text">Gestión integral para la homologación de títulos de medicina, especialidades médicas y titulaciones universitarias ante los ministerios en España.</p>
-                    </div>
-                    <a href="homologacion.html" class="btn-card-action">Evaluar Viabilidad Gratis &rarr;</a>
-                </div>
-
-                <!-- Tarjeta 2: Extranjería -->
-                <div class="service-card">
-                    <div>
-                        <h3 class="service-title">Derecho de Extranjería (España)</h3>
-                        <p class="service-text">Residencias, visados de trabajo, estancia por estudios, arraigos, ley de emprendedores y tramitación de la nacionalidad española.</p>
-                    </div>
-                    <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
-                </div>
-
-                <!-- Tarjeta 3: Servicios Colombia -->
-                <div class="service-card">
-                    <div>
-                        <h3 class="service-title">Servicios Jurídicos y Tributarios (Colombia)</h3>
-                        <p class="service-text">Asesoría jurídica patrimonial, gestión tributaria para colombianos en el exterior y trámites legales corporativos directos en Colombia.</p>
-                    </div>
-                    <a href="#agendar" class="service-link">Consultar caso &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN DE AGENDAMIENTO DE CITA -->
-    <section id="agendar" class="booking-section text-center">
-        <div class="container">
-            <div class="booking-wrapper">
-                <span class="section-subtitle gold-text">Atención Personalizada</span>
-                <h2 class="section-title text-white">Agende su Consulta Legal</h2>
-                <p class="section-description text-light">Seleccione la fecha y hora que mejor se adapte a su disponibilidad para analizar su expediente con uno de nuestros especialistas.</p>
-
-                <div class="calendly-embed-container">
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/jorge-mendez-mendezhigueraabogados/30min?hide_gdpr_banner=1&background_color=0f1e36&text_color=ffffff&primary_color=c5a059" style="min-width:320px;height:700px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                </div>
+            <h2 class="section-title">Agendar Cita de Asesoría</h2>
+            <div class="calendly-wrapper">
+                <!-- Principio del widget incrustado de Calendly -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/jorge-mendez-mendezhigueraabogados/30min" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Final del widget incrustado de Calendly -->
             </div>
         </div>
     </section>
@@ -863,37 +544,6 @@
     <a href="https://wa.me/573053565330?text=Hola,%20quisiera%20solicitar%20información%20sobre%20sus%20servicios%20legales." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
-    <!-- VENTANA DE ACEPTACIÓN DE COOKIES -->
-    <div id="cookieBanner" class="cookie-banner">
-        <p class="cookie-text">
-            Utilizamos cookies propias y de terceros para mejorar su experiencia de navegación y analizar el tráfico de la web. Puede revisar nuestra <a href="politicacookies.html">Política de Cookies</a> para más información.
-        </p>
-        <div class="cookie-buttons">
-            <button onclick="rejectCookies()" class="btn-cookie-reject">Rechazar</button>
-            <button onclick="acceptCookies()" class="btn-cookie-accept">Aceptar</button>
-        </div>
-    </div>
-
-    <!-- SCRIPT GESTIÓN DE COOKIES -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const cookieChoice = localStorage.getItem("cookieConsent");
-            if (!cookieChoice) {
-                document.getElementById("cookieBanner").style.display = "block";
-            }
-        });
-
-        function acceptCookies() {
-            localStorage.setItem("cookieConsent", "accepted");
-            document.getElementById("cookieBanner").style.display = "none";
-        }
-
-        function rejectCookies() {
-            localStorage.setItem("cookieConsent", "rejected");
-            document.getElementById("cookieBanner").style.display = "none";
-        }
-    </script>
 
 </body>
 </html>
