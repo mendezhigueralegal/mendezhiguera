@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     
+    <!-- FontAwesome para Iconos de Redes y Contacto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- ESTILOS INTEGRADOS -->
     <style>
         :root {
@@ -56,27 +59,27 @@
             color: inherit;
         }
 
-        /* NAVEGACIÓN SUPERIOR CENTRADA */
+        /* NAVEGACIÓN SUPERIOR CENTRADA Y REDES */
         .header {
             background-color: rgba(15, 30, 54, 0.96);
             position: sticky;
             top: 0;
             z-index: 1000;
-            padding: 18px 0;
+            padding: 15px 0;
             border-bottom: 1px solid rgba(197, 160, 89, 0.25);
             backdrop-filter: blur(8px);
         }
 
-        .nav-container-centered {
+        .nav-wrapper {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 45px;
+            gap: 30px;
             align-items: center;
         }
 
@@ -90,6 +93,22 @@
 
         .nav-links a:hover {
             color: var(--accent-gold);
+        }
+
+        .header-socials {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-socials a {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .header-socials a:hover {
+            color: var(--white);
+            transform: translateY(-2px);
         }
 
         /* SECCIÓN HERO Y CARRUSEL */
@@ -382,6 +401,54 @@
             color: var(--primary-navy);
         }
 
+        /* SECCIÓN RESEÑAS Y TESTIMONIOS */
+        .testimonials-section {
+            padding: 90px 0;
+            background-color: var(--white);
+        }
+
+        .testimonial-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .video-box {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            margin-top: 30px;
+            background-color: #000;
+        }
+
+        .video-box iframe, 
+        .video-box video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-top: 25px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-top: 8px;
+            display: block;
+        }
+
         /* AGENDAMIENTO */
         .booking-section {
             padding: 90px 0;
@@ -419,9 +486,190 @@
             border: none;
         }
 
+        /* PIE DE PÁGINA / FOOTER */
+        .footer {
+            background-color: #0a1424;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 70px 0 30px 0;
+            border-top: 1px solid rgba(197, 160, 89, 0.3);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+        }
+
+        .footer-contact-list li {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-list a {
+            color: rgba(255, 255, 255, 0.85);
+            transition: var(--transition);
+        }
+
+        .footer-contact-list a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-links-list {
+            list-style: none;
+        }
+
+        .footer-links-list li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links-list a {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-links-list a:hover {
+            color: var(--accent-gold);
+            padding-left: 5px;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* BANNER DE COOKIES */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            max-width: 500px;
+            background-color: var(--primary-navy);
+            border: 1px solid var(--accent-gold);
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            color: var(--white);
+            display: none; /* Controlado por JS */
+            animation: fadeInUp 0.5s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cookie-text {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cookie-text a {
+            color: var(--accent-gold);
+            text-decoration: underline;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .btn-cookie-accept {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            border: none;
+            padding: 8px 18px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-cookie-accept:hover {
+            background-color: #d8b268;
+        }
+
+        .btn-cookie-reject {
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 8px 18px;
+            font-size: 0.85rem;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-cookie-reject:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 15px;
+            }
             .nav-links {
-                gap: 20px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             .hero-title {
                 font-size: 1.9rem;
@@ -436,22 +684,35 @@
                 flex-direction: column;
                 gap: 20px;
             }
+            .cookie-banner {
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVEGACIÓN SUPERIOR CENTRADA -->
+    <!-- NAVEGACIÓN SUPERIOR CON REDES SOCIALES -->
     <header class="header">
         <div class="container">
-            <nav class="nav-container-centered">
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#la-firma">La Firma</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#agendar">Agendar Cita</a></li>
-                </ul>
-            </nav>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#la-firma">La Firma</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#resenas">Reseñas</a></li>
+                        <li><a href="#agendar">Agendar Cita</a></li>
+                    </ul>
+                </nav>
+                <div class="header-socials">
+                    <a href="https://www.instagram.com/mendezhigueraabogados/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@mendezhigueraabogados" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@MendezHigueraLegal" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -551,7 +812,25 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE AGENDAMIENTO DE CITA (CALENDLY ACTUALIZADO) -->
+    <!-- SECCIÓN DE RESEÑAS Y TESTIMONIOS -->
+    <section id="resenas" class="testimonials-section text-center">
+        <div class="container">
+            <div class="testimonial-container">
+                <span class="section-subtitle">Casos de Éxito</span>
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-description">La tranquilidad de nuestros representados es nuestro mejor aval.</p>
+
+                <div class="video-box">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Testimonio de Cliente" allowfullscreen></iframe>
+                </div>
+
+                <p class="testimonial-quote">"Su acompañamiento constante e información clara marcaron la diferencia durante todo el trámite de mi expediente."</p>
+                <span class="testimonial-author">Dr. Cliente Satisfecho — Homologación de Título en España</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE AGENDAMIENTO DE CITA -->
     <section id="agendar" class="booking-section text-center">
         <div class="container">
             <div class="booking-wrapper">
@@ -566,6 +845,85 @@
             </div>
         </div>
     </section>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Firma -->
+                <div class="footer-col">
+                    <h4>Méndez Higuera Legal Group</h4>
+                    <p>Firma de abogados transatlántica especializada en brindar seguridad jurídica y eficiencia en trámites entre España y Colombia.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/mendezhigueraabogados/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mendezhigueraabogados" target="_blank" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@MendezHigueraLegal" target="_blank" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Contacto -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-brands fa-whatsapp gold-text"></i>
+                            <a href="https://wa.me/573053565330" target="_blank">+57 305 356 53 30</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope gold-text"></i>
+                            <a href="mailto:jorge.mendez@mendezhigueraabogados.com">jorge.mendez@mendezhigueraabogados.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Enlaces Legales -->
+                <div class="footer-col">
+                    <h4>Información Legal</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="politicacookies.html">Política de Cookies</a></li>
+                        <li><a href="politicaprivacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminosycondiciones.html">Términos y Condiciones de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyight -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Méndez Higuera Legal Group. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- VENTANA DE ACEPTACIÓN DE COOKIES -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p class="cookie-text">
+            Utilizamos cookies propias y de terceros para mejorar su experiencia de navegación y analizar el tráfico de la web. Puede revisar nuestra <a href="politicacookies.html">Política de Cookies</a> para más información.
+        </p>
+        <div class="cookie-buttons">
+            <button onclick="rejectCookies()" class="btn-cookie-reject">Rechazar</button>
+            <button onclick="acceptCookies()" class="btn-cookie-accept">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- SCRIPT GESTIÓN DE COOKIES -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieChoice = localStorage.getItem("cookieConsent");
+            if (!cookieChoice) {
+                document.getElementById("cookieBanner").style.display = "block";
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem("cookieConsent", "accepted");
+            document.getElementById("cookieBanner").style.display = "none";
+        }
+
+        function rejectCookies() {
+            localStorage.setItem("cookieConsent", "rejected");
+            document.getElementById("cookieBanner").style.display = "none";
+        }
+    </script>
 
 </body>
 </html>
