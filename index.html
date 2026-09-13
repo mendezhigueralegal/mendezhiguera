@@ -6,8 +6,8 @@
     <title>Méndez Higuera Legal Group | Firma Legal Transatlántica España - Colombia</title>
     
     <!-- META ETIQUETAS SEO -->
-    <meta name="description" content="Méndez Higuera Legal Group | Firma de abogados transatlántica especializada en extranjería, nacionalidad, homologación de títulos e inversiones entre España y Colombia. Solicita tu consulta legal.">
-    <meta name="keywords" content="abogados extranjeria españa colombia, homologacion titulos españa, visados españa colombia, arraigo social laboral, nacionalidad española, inversion transatlantica, mendez higuera abogados">
+    <meta name="description" content="Méndez Higuera Legal Group | Firma de abogados transatlántica especializada en extranjería, nacionalidad, homologación de títulos e impuestos entre España y Colombia. Solicita tu consulta legal.">
+    <meta name="keywords" content="abogados extranjeria españa colombia, homologacion titulos medicina españa, visados españa colombia, nacionalidad española, convalidacion especialidades medicas colombia, asesorias tributarias colombia">
     <meta name="author" content="Méndez Higuera Legal Group">
     <meta name="robots" content="index, follow">
 
@@ -15,14 +15,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mendezhigueraabogados.com/">
     <meta property="og:title" content="Méndez Higuera Legal Group | Firma Legal Transatlántica España - Colombia">
-    <meta property="og:description" content="Seguridad jurídica y eficiencia en trámites internacionales, extranjería, visados y homologación de títulos entre España y Colombia.">
+    <meta property="og:description" content="Seguridad jurídica y eficiencia en trámites internacionales, extranjería, visados, homologación de títulos y asesoría fiscal entre España y Colombia.">
     <meta property="og:image" content="https://mendezhigueraabogados.com/logo.png">
     <meta property="og:locale" content="es_ES">
 
     <!-- CARD PARA TWITTER / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Méndez Higuera Legal Group | Abogados España - Colombia">
-    <meta name="twitter:description" content="Asesoría jurídica especializada en derecho transatlántico, extranjería y homologación de títulos.">
+    <meta name="twitter:description" content="Asesoría jurídica especializada en derecho transatlántico, extranjería, homologación de títulos y temas fiscales.">
     <meta name="twitter:image" content="https://mendezhigueraabogados.com/logo.png">
 
     <!-- FAVICON -->
@@ -274,7 +274,7 @@
 
         .servicios-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
@@ -285,6 +285,9 @@
             box-shadow: var(--box-shadow);
             border-top: 4px solid var(--accent-gold);
             transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .servicio-card:hover {
@@ -307,6 +310,28 @@
         .servicio-card p {
             color: var(--text-muted);
             font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-card-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: var(--primary-navy);
+            color: var(--accent-gold);
+            padding: 10px 18px;
+            border-radius: 4px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: 1px solid var(--accent-gold);
+            transition: var(--transition);
+            margin-top: auto;
+        }
+
+        .btn-card-action:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
         }
 
         /* SECCIÓN AGENDAR CITA (CALENDLY) */
@@ -517,7 +542,7 @@
         <div class="container">
             <h2 class="section-title">La Firma</h2>
             <div class="firma-content">
-                <p>En <strong>Méndez Higuera Legal Group</strong> entendemos que los retos jurídicos transatlánticos exigen precisión, cercanía y una estrategia legal sólida. Nos especializamos en conectar las normativas de España y Colombia para brindar asesoría integral a particulares y empresas, garantizando soluciones ágiles en extranjería, nacionalidad, homologación de títulos e inversiones internacionales.</p>
+                <p>En <strong>Méndez Higuera Legal Group</strong> entendemos que los retos jurídicos transatlánticos exigen precisión, cercanía y una estrategia legal sólida. Nos especializamos en conectar las normativas de España y Colombia para brindar asesoría integral a particulares y profesionales, garantizando soluciones ágiles en extranjería, nacionalidad, homologación de títulos e impuestos.</p>
             </div>
         </div>
     </section>
@@ -527,26 +552,56 @@
         <div class="container">
             <h2 class="section-title">Nuestros Servicios</h2>
             <div class="servicios-grid">
+                
+                <!-- Servicio 1: Homologación en España (con Test Tally) -->
                 <div class="servicio-card">
-                    <i class="fa-solid fa-passport"></i>
-                    <h3>Extranjería y Visados</h3>
-                    <p>Tramitación de visados, residencia por arraigo, visados de inversor, nomadismo digital y renovación de autorizaciones en España.</p>
+                    <div>
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h3>Homologación de Títulos Profesionales en España</h3>
+                        <p>Gestión integral para la homologación de títulos universitarios en España, con especialización dedicada a profesionales de la salud y médicos.</p>
+                    </div>
+                    <a href="https://tally.so/r/BzVKWe" target="_blank" class="btn-card-action">
+                        <span>Realizar Test de Viabilidad</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
+
+                <!-- Servicio 2: Nacionalidad Española -->
                 <div class="servicio-card">
-                    <i class="fa-solid fa-flag"></i>
-                    <h3>Nacionalidad Española</h3>
-                    <p>Asesoría y gestión integral del expediente de nacionalidad por residencia o ley de memoria democrática.</p>
+                    <div>
+                        <i class="fa-solid fa-passport"></i>
+                        <h3>Nacionalidad Española</h3>
+                        <p>Tramitación y acompañamiento legal para solicitudes de nacionalidad por residencia, por cónyuge de español o por ser hijo de español.</p>
+                    </div>
                 </div>
+
+                <!-- Servicio 3: Extranjería -->
                 <div class="servicio-card">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Homologación de Títulos</h3>
-                    <p>Convalidación y homologación de títulos universitarios y técnicos obtenidos en Colombia para su validez legal en España.</p>
+                    <div>
+                        <i class="fa-solid fa-id-card"></i>
+                        <h3>Extranjería y Visados</h3>
+                        <p>Gestión completa de permisos de residencia, residencia y trabajo, estancia por estudios y renovación de autorizaciones en España.</p>
+                    </div>
                 </div>
+
+                <!-- Servicio 4: Asesorías Tributarias en Colombia -->
                 <div class="servicio-card">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h3>Inversiones Transatlánticas</h3>
-                    <p>Acompañamiento jurídico para la apertura de negocios, constitución de sociedades e inversión inmobiliaria transfronteriza.</p>
+                    <div>
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <h3>Asesorías Tributarias y Fiscales en Colombia</h3>
+                        <p>Planeación fiscal y presentación de declaraciones de renta, IVA y demás obligaciones ante la DIAN para personas naturales y jurídicas.</p>
+                    </div>
                 </div>
+
+                <!-- Servicio 5: Convalidación Médica en Colombia -->
+                <div class="servicio-card">
+                    <div>
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <h3>Convalidación de Especialidades Médicas en Colombia</h3>
+                        <p>Asesoría jurídica y tramitación técnica para la convalidación de especialidades médicas obtenidas en el exterior ante el Ministerio de Educación Nacional (MEN).</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
