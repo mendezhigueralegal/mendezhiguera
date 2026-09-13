@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Méndez Higuera Legal Group</title>
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ESTILOS INTEGRADOS -->
+    <style>
+        :root {
+            --primary-navy: #0f1e36;
+            --accent-gold: #c5a059;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-muted: #555555;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --transition: all 0.3s ease;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVEGACIÓN SUPERIOR CENTRADA Y REDES */
+        .header {
+            background-color: rgba(15, 30, 54, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        .nav-wrapper-centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .header-socials {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .header-socials a {
+            color: var(--accent-gold);
+            font-size: 1.05rem;
+            transition: var(--transition);
+        }
+
+        .header-socials a:hover {
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* CABECERA PÁGINA LEGAL */
+        .legal-header {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 3px solid var(--accent-gold);
+        }
+
+        .legal-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+
+        .legal-header p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* CONTENIDO DE LA PÁGINA LEGAL */
+        .legal-content {
+            background-color: var(--white);
+            max-width: 900px;
+            margin: -40px auto 70px auto;
+            padding: 50px 40px;
+            border-radius: 6px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-heading);
+            color: var(--primary-navy);
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(197, 160, 89, 0.2);
+            padding-bottom: 8px;
+        }
+
+        .legal-content p, .legal-content li {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .legal-content ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .gold-text {
+            color: var(--accent-gold) !important;
+        }
+
+        /* PIE DE PÁGINA / FOOTER */
+        .footer {
+            background-color: #0a1424;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 70px 0 30px 0;
+            border-top: 1px solid rgba(197, 160, 89, 0.3);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+        }
+
+        .footer-contact-list li {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-list a {
+            color: rgba(255, 255, 255, 0.85);
+            transition: var(--transition);
+        }
+
+        .footer-contact-list a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-links-list {
+            list-style: none;
+        }
+
+        .footer-links-list li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links-list a {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-links-list a:hover {
+            color: var(--accent-gold);
+            padding-left: 5px;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* BOTÓN FLOTANTE DE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-navy);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .legal-content {
+                padding: 30px 20px;
+                margin-top: -20px;
+            }
+            .legal-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVEGACIÓN SUPERIOR CENTRADA -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper-centered">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#la-firma">La Firma</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#agendar">Agendar Cita</a></li>
+                    </ul>
+                </nav>
+                <div class="header-socials">
+                    <a href="https://www.instagram.com/mendezhigueraabogados/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@mendezhigueraabogados" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@MendezHigueraLegal" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CABECERA DE LA PÁGINA -->
+    <section class="legal-header">
+        <div class="container">
+            <h1>Política de Privacidad</h1>
+            <p>Méndez Higuera Legal Group | Protección de Datos Personales</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO LEGAL -->
+    <main class="container">
+        <article class="legal-content">
+            <p>Última actualización: <strong>Septiembre 2026</strong></p>
+
+            <h2>1. Responsable del Tratamiento</h2>
+            <p>En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos (RGPD UE 2016/679), la Ley Orgánica 3/2018 (LOPDGDD) de España y la Ley 1581 de 2012 de Protección de Datos Personales de la República de Colombia, se informa que los datos personales recogidos en este sitio web serán tratados bajo la responsabilidad de:</p>
+            <ul>
+                <li><strong>Denominación / Firma:</strong> Méndez Higuera Legal Group</li>
+                <li><strong>Dirección de Contacto:</strong> España y Colombia</li>
+                <li><strong>Correo Electrónico de Privacidad:</strong> <a href="mailto:jorge.mendez@mendezhigueraabogados.com" class="gold-text">jorge.mendez@mendezhigueraabogados.com</a></li>
+                <li><strong>Teléfono de Atención:</strong> +57 305 356 53 30</li>
+            </ul>
+
+            <h2>2. Datos Personales Recabados y Finalidad</h2>
+            <p>En <strong>Méndez Higuera Legal Group</strong> recopilamos la información personal necesaria para ofrecer nuestros servicios de asesoría jurídica transatlántica. Los datos recabados a través de nuestros formularios o plataformas externas integradas (como Calendly o enlaces de comunicación directa) incluyen:</p>
+            <ul>
+                <li><strong>Datos de Identificación y Contacto:</strong> Nombre, apellidos, correo electrónico, número de teléfono o WhatsApp.</li>
+                <li><strong>Datos de la Consulta:</strong> Detalles, información sobre la situación jurídica planteada y documentos facilitados voluntariamente por el usuario.</li>
+            </ul>
+            <p><strong>Finalidades principales del tratamiento:</strong></p>
+            <ul>
+                <li>Gestionar y agendar la cita de asesoría jurídica previa solicitada a través de la web.</li>
+                <li>Responder a las solicitudes de información o consultas legales enviadas por los usuarios.</li>
+                <li>Prestar los servicios jurídicos y de representación legal contratados posteriormente.</li>
+                <li>Cumplir con las obligaciones legales y contables aplicables al despacho en las jurisdicciones de España y Colombia.</li>
+            </ul>
+
+            <h2>3. Legitimación para el Tratamiento</h2>
+            <p>La base legal para el tratamiento de sus datos de carácter personal es:</p>
+            <ul>
+                <li>El <strong>consentimiento expreso</strong> e informado del usuario otorgado al solicitar una cita, enviar una consulta o contactar a través de WhatsApp o correo electrónico.</li>
+                <li>La <strong>ejecución de medidas precontractuales o contractuales</strong> requeridas para la prestación de los servicios legales acordados.</li>
+                <li>El <strong>cumplimiento de obligaciones legales</strong> y ético-profesionales inherentes al ejercicio del Derecho y la abogacía.</li>
+            </ul>
+
+            <h2>4. Conservación de los Datos</h2>
+            <p>Los datos personales proporcionados se conservarán durante el tiempo estrictamente necesario para cumplir con las finalidades para las que fueron recabados y para determinar las posibles responsabilidades que se pudieran derivar de dicha finalidad y del tratamiento de los datos. En caso de prestarse servicios profesionales, los datos se mantendrán durante los plazos legalmente exigidos por las normas fiscales y de ejercicio profesional en España y Colombia.</p>
+
+            <h2>5. Comunicaciones y Transferencia de Datos</h2>
+            <p>Sus datos personales no serán vendidos, alquilados ni cedidos a terceros sin su consentimiento explícito, salvo en los siguientes supuestos:</p>
+            <ul>
+                <li>Prestadores de servicios necesarios para la operativa tecnológica del portal web (por ejemplo, servidores de alojamiento, Calendly para agendamiento de citas, WhatsApp de Meta para mensajería directa).</li>
+                <li>Organismos públicos, juzgados, tribunales y autoridades administrativas de España o Colombia en el ejercicio de las funciones encomendadas a la firma o cuando exista un mandato legal aplicable.</li>
+            </ul>
+
+            <h2>6. Derechos del Usuario (Derechos ARCO y RGPD)</h2>
+            <p>Como titular de los datos personales, le asisten los siguientes derechos contemplados en el RGPD (UE) y en la Ley 1581/2012 (Colombia):</p>
+            <ul>
+                <li><strong>Acceso:</strong> Derecho a conocer qué datos personales tenemos sobre usted.</li>
+                <li><strong>Rectificación:</strong> Derecho a solicitar la corrección de datos inexactos o incompletos.</li>
+                <li><strong>Supresión / Cancelación:</strong> Derecho a solicitar la eliminación de sus datos cuando ya no sean necesarios para los fines que motivaron su recogida.</li>
+                <li><strong>Oposición y Limitación:</strong> Derecho a limitar u oponerse al tratamiento de sus datos bajo determinadas circunstancias.</li>
+                <li><strong>Portabilidad:</strong> Derecho a recibir sus datos en un formato estructurado y de uso común.</li>
+                <li><strong>Revocación del consentimiento:</strong> Derecho a retirar el consentimiento otorgado en cualquier momento.</li>
+            </ul>
+            <p>Para ejercitar cualquiera de estos derechos, el usuario puede remitir una solicitud por escrito indicando su nombre, apellidos y el derecho que desea ejercitar, acompañada de una copia de su documento de identidad (DNI/NIE/Pasaporte/Cédula) a la dirección de correo electrónico: <a href="mailto:jorge.mendez@mendezhigueraabogados.com" class="gold-text">jorge.mendez@mendezhigueraabogados.com</a>.</p>
+
+            <h2>7. Medidas de Seguridad</h2>
+            <p><strong>Méndez Higuera Legal Group</strong> adopta las medidas de seguridad técnicas, organizativas y jurídicas necesarias para proteger la confidencialidad, integridad y disponibilidad de los datos personales recopilados, previniendo su alteración, pérdida o acceso no autorizado.</p>
+
+            <h2>8. Modificaciones a la Política de Privacidad</h2>
+            <p>Nos reservamos el derecho de modificar la presente Política de Privacidad para adaptarla a novedades legislativas, jurisprudenciales o interpretativas que puedan surgir. Se recomienda revisar periódicamente esta subpágina.</p>
+        </article>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Firma -->
+                <div class="footer-col">
+                    <h4>Méndez Higuera Legal Group</h4>
+                    <p>Firma de abogados transatlántica especializada en brindar seguridad jurídica y eficiencia en trámites entre España y Colombia.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/mendezhigueraabogados/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mendezhigueraabogados" target="_blank" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@MendezHigueraLegal" target="_blank" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Contacto -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-brands fa-whatsapp gold-text"></i>
+                            <a href="https://wa.me/573053565330" target="_blank">+57 305 356 53 30</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope gold-text"></i>
+                            <a href="mailto:jorge.mendez@mendezhigueraabogados.com">jorge.mendez@mendezhigueraabogados.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Enlaces Legales -->
+                <div class="footer-col">
+                    <h4>Información Legal</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="politicacookies.html">Política de Cookies</a></li>
+                        <li><a href="politicaprivacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminosycondiciones.html">Términos y Condiciones de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Méndez Higuera Legal Group. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573053565330?text=Hola,%20quisiera%20solicitar%20información%20sobre%20sus%20servicios%20legales." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
