@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | Méndez Higuera Legal Group</title>
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ESTILOS INTEGRADOS -->
+    <style>
+        :root {
+            --primary-navy: #0f1e36;
+            --accent-gold: #c5a059;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-muted: #555555;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --transition: all 0.3s ease;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVEGACIÓN SUPERIOR CENTRADA Y REDES */
+        .header {
+            background-color: rgba(15, 30, 54, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        .nav-wrapper-centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .header-socials {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .header-socials a {
+            color: var(--accent-gold);
+            font-size: 1.05rem;
+            transition: var(--transition);
+        }
+
+        .header-socials a:hover {
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* CABECERA PÁGINA LEGAL */
+        .legal-header {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 3px solid var(--accent-gold);
+        }
+
+        .legal-header h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+
+        .legal-header p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* CONTENIDO DE LA PÁGINA LEGAL */
+        .legal-content {
+            background-color: var(--white);
+            max-width: 900px;
+            margin: -40px auto 70px auto;
+            padding: 50px 40px;
+            border-radius: 6px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-heading);
+            color: var(--primary-navy);
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(197, 160, 89, 0.2);
+            padding-bottom: 8px;
+        }
+
+        .legal-content p, .legal-content li {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .legal-content ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .gold-text {
+            color: var(--accent-gold) !important;
+        }
+
+        /* PIE DE PÁGINA / FOOTER */
+        .footer {
+            background-color: #0a1424;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 70px 0 30px 0;
+            border-top: 1px solid rgba(197, 160, 89, 0.3);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+        }
+
+        .footer-contact-list li {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-list a {
+            color: rgba(255, 255, 255, 0.85);
+            transition: var(--transition);
+        }
+
+        .footer-contact-list a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-links-list {
+            list-style: none;
+        }
+
+        .footer-links-list li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links-list a {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-links-list a:hover {
+            color: var(--accent-gold);
+            padding-left: 5px;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* BOTÓN FLOTANTE DE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-navy);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .legal-content {
+                padding: 30px 20px;
+                margin-top: -20px;
+            }
+            .legal-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVEGACIÓN SUPERIOR CENTRADA -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper-centered">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#la-firma">La Firma</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#agendar">Agendar Cita</a></li>
+                    </ul>
+                </nav>
+                <div class="header-socials">
+                    <a href="https://www.instagram.com/mendezhigueraabogados/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@mendezhigueraabogados" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@MendezHigueraLegal" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CABECERA DE LA PÁGINA -->
+    <section class="legal-header">
+        <div class="container">
+            <h1>Términos y Condiciones de Uso</h1>
+            <p>Méndez Higuera Legal Group | Regulación del Uso del Sitio Web y Servicios de Asesoría</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO LEGAL -->
+    <main class="container">
+        <article class="legal-content">
+            <p>Última actualización: <strong>Septiembre 2026</strong></p>
+
+            <h2>1. Aspectos Generales e Identificación</h2>
+            <p>El presente documento regula el acceso, navegación y uso del sitio web oficial de <strong>Méndez Higuera Legal Group</strong>. Al acceder a esta plataforma o hacer uso de nuestros sistemas de agendamiento y contacto, el usuario acepta de manera plena y sin reservas todas y cada una de las disposiciones incluidas en estos Términos y Condiciones.</p>
+            <p>Si no está de acuerdo con alguno de los términos estipulados, le rogamos que se abstenga de utilizar este portal web o solicitar servicios a través del mismo.</p>
+
+            <h2>2. Objeto del Sitio Web</h2>
+            <p>Este sitio web tiene por objeto ofrecer información corporativa sobre los servicios profesionales prestados por <strong>Méndez Higuera Legal Group</strong> en materia de derecho de extranjería, servicios legales transatlánticos (España - Colombia), homologación de títulos, inversiones y representación jurídica, así como facilitar la reserva de citas de consulta legal previa.</p>
+
+            <h2>3. Carácter Informativo y Relación Abogado-Cliente</h2>
+            <p>La información contenida en las secciones informativas de la web, redes sociales o publicaciones tiene carácter divulgativo e informativo general y no constituye en sí misma un dictamen, informe o asesoramiento jurídico personalizado.</p>
+            <p>La simple navegación por el sitio web o el envío de consultas preliminares a través de formularios o WhatsApp <strong>no constituye ni crea de por sí una relación contractual o profesional de Abogado-Cliente</strong>. Dicha relación quedará constituida formalmente únicamente tras el agendamiento y realización de la consulta o la firma de la correspondiente hoja de encargo/propuesta de servicios profesionales.</p>
+
+            <h2>4. Reserva y Agendamiento de Citas Legales</h2>
+            <p>A través de la herramienta integrada de agendamiento (Calendly), los usuarios pueden reservar consultas de orientación jurídica de acuerdo a los siguientes términos:</p>
+            <ul>
+                <li><strong>Exactitud de la información:</strong> El usuario se compromete a proporcionar información veraz, completa y exacta en el momento de agendar la cita.</li>
+                <li><strong>Puntualidad y Asistencia:</strong> Las citas se desarrollarán a la hora acordada mediante la plataforma de videoconferencia designada o vía telefónica. Se concede un margen máximo de cortesía de 10 minutos.</li>
+                <li><strong>Cancelación y Reagendamiento:</strong> Los usuarios deberán notificar cualquier cambio o cancelación con al menos 24 horas de antelación a través de las opciones habilitadas en el correo de confirmación de Calendly o vía correo electrónico a la firma.</li>
+            </ul>
+
+            <h2>5. Propiedad Intelectual e Industrial</h2>
+            <p>Todos los contenidos del sitio web (incluyendo textos, imágenes, diseño gráfico, logotipos, iconos, nombres comerciales, marcas, código fuente y estructura de navegación) son propiedad exclusiva de <strong>Méndez Higuera Legal Group</strong> o de terceros que han autorizado su inclusión.</p>
+            <p>Queda estrictamente prohibida la reproducción, distribución, comunicación pública o transformación total o parcial de dichos contenidos sin la autorización expresa y por escrito de los titulares de la firma.</p>
+
+            <h2>6. Limitación de Responsabilidad</h2>
+            <p><strong>Méndez Higuera Legal Group</strong> vela por la veracidad, actualización y correcto funcionamiento de la web; sin embargo, no garantiza la ausencia de interrupciones, errores técnicos o malware derivados de servidores de terceros o proveedores de hosting.</p>
+            <p>La firma no se hace responsable de las decisiones tomadas por los usuarios basándose únicamente en la información contenida en el portal sin haber recibido asesoramiento jurídico formal y personalizado sobre su caso particular.</p>
+
+            <h2>7. Enlaces a Terceros</h2>
+            <p>Este portal puede contener enlaces a sitios web de terceros (como plataformas de reservas, redes sociales o portales institucionales). <strong>Méndez Higuera Legal Group</strong> no ejerce control sobre el contenido, políticas de privacidad o prácticas de dichos sitios, eximiéndose de cualquier responsabilidad derivada de su uso.</p>
+
+            <h2>8. Legislación Aplicable y Jurisdicción</h2>
+            <p>Los presentes Términos y Condiciones se rigen e interpretan conforme a las leyes aplicables en <strong>España</strong> y la <strong>República de Colombia</strong>, atendiendo al ámbito transatlántico en el que opera la firma.</p>
+            <p>Para la resolución de cualquier controversia o disputa legal relacionada con el uso de este portal web, las partes acuerdan someterse a la jurisdicción de los juzgados y tribunales competentes conforme a la legislación aplicable.</p>
+
+            <h2>9. Modificaciones de los Términos</h2>
+            <p><strong>Méndez Higuera Legal Group</strong> se reserva la facultad de efectuar, en cualquier momento y sin necesidad de previo aviso, modificaciones o actualizaciones del contenido de estos Términos y Condiciones. El usuario estará sujeto a las condiciones vigentes en el momento en que acceda a la web.</p>
+
+            <h2>10. Contacto</h2>
+            <p>Para cualquier duda o aclaración sobre estos Términos y Condiciones de Uso, puede dirigirse a nuestro equipo mediante correo electrónico en: <a href="mailto:jorge.mendez@mendezhigueraabogados.com" class="gold-text">jorge.mendez@mendezhigueraabogados.com</a>.</p>
+        </article>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Firma -->
+                <div class="footer-col">
+                    <h4>Méndez Higuera Legal Group</h4>
+                    <p>Firma de abogados transatlántica especializada en brindar seguridad jurídica y eficiencia en trámites entre España y Colombia.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/mendezhigueraabogados/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mendezhigueraabogados" target="_blank" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@MendezHigueraLegal" target="_blank" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Contacto -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-brands fa-whatsapp gold-text"></i>
+                            <a href="https://wa.me/573053565330" target="_blank">+57 305 356 53 30</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope gold-text"></i>
+                            <a href="mailto:jorge.mendez@mendezhigueraabogados.com">jorge.mendez@mendezhigueraabogados.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Enlaces Legales -->
+                <div class="footer-col">
+                    <h4>Información Legal</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="politicacookies.html">Política de Cookies</a></li>
+                        <li><a href="politicaprivacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminosycondiciones.html">Términos y Condiciones de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Méndez Higuera Legal Group. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573053565330?text=Hola,%20quisiera%20solicitar%20información%20sobre%20sus%20servicios%20legales." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
